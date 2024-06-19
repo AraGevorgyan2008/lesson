@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".MainActivity5">
+
+    <RelativeLayout
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/Blue"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:text="Hi,Admin"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="casual"
+        android:text="This is the home page"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+
+    <RelativeLayout
+            android:id="@+id/we"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/admin"
+            android:layout_marginHorizontal="50dp"
+            android:background="@color/white"
+            android:layout_marginTop="-80dp">
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:text="Չսխմես"
+        />
+</RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/we"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/user_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="bio"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/savee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_bio"
+        android:layout_marginStart="50dp"
+        android:onClick="saveData"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/gett"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_bio"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:onClick="getData"
+        android:text="Get" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Blue"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Home" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goContacts"
+            android:text="Contacts" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:onClick="goWeb"
+            android:text="WEB" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
